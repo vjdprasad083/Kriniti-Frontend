@@ -17,7 +17,8 @@ export const jobs =
     {
         "companyName": "Amazon",
         "period": "3 yr 8 mos",
-        "img":"https://media.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_100_100/0/1612205615891?e=1691020800&v=beta&t=vxJKGUxGpVJWcqgM58hMETLy48-3p4nEr6BOLKaW5TY",        "jobType": "Full-time",
+        "img":"https://media.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_100_100/0/1612205615891?e=1691020800&v=beta&t=vxJKGUxGpVJWcqgM58hMETLy48-3p4nEr6BOLKaW5TY",       
+        "jobType": "Full-time",
         "roles": [
           {
             "role": " Associate Software Developer",
@@ -38,7 +39,7 @@ export const jobs =
         ]
       },
     {
-    "companyName": "Amazon",
+    "companyName": "Mattermost",
     "img":"https://media.licdn.com/dms/image/C4E0BAQHKzpS-amYfmQ/company-logo_100_100/0/1652214403619?e=1691020800&v=beta&t=ewGOpBOQNkhlFGNkAgDU6yPvoTA7_YHzZIX_aQhKKXI",
     "roles": [
         {

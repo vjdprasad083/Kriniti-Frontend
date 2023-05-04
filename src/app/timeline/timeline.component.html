@@ -1,39 +1,52 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-<div class="job-timeline">
-
-<ul class="job-timeline-data">
-  <div class="job-timeline-header">Experience</div>
-  <div>
-    <ng-container *ngFor="let job of jobs, let last = last">
-      <div class="job-timeline-image" >
-      <div class="job-timeline-img" ><img src={{job.img}} alt=""></div>
-      </div>
-      <div class="job-timeline-content">
-      <li *ngIf="job.roles.length === 1">
-        <div class="job-timeline-title">{{ job.roles[0].role }}</div>
-        <div class="job-timeline-company">{{ job.companyName }} &middot; {{ job.roles[0].jobType }}</div>
-        <div>{{ job.roles[0].startDate }} - {{ job.roles[0].endDate }} &middot; {{ job.roles[0].period }}</div>
-        <div>{{job.roles[0].city }}, {{ job.roles[0].state }}</div>
-        <hr *ngIf="!last">
-      </li>
-      <li *ngIf="job.roles.length > 1">
-        <div>
-        <div class="job-timeline-title" >{{ job.companyName }}</div>
-        <div class="job-timeline-company">{{ job.jobType }} &middot; {{ job.period }}</div>
-        <ul class="job-timeline-roles">
-          <li *ngFor="let role of job.roles,let last = last">
-            <span class="job-timeline-dot"></span>
-            <div class="job-timeline-title" >{{ role.role }}</div>
-            <div>{{ role.startDate }} - {{ role.endDate }} &middot; {{ role.period }}</div>
-            <div>{{ role.city }}, {{ role.state }}</div>
-            <div *ngIf="!last" class="job-timeline-line"></div>
+<div *ngIf="jobs" class="job-timeline">
+  <ul class="job-timeline-data">
+    <div class="job-timeline-header">Experience</div>
+    <div class="job-timeline-parent">
+      <ng-container *ngFor="let item of jobs | keyvalue; let last = last">
+        <div class="job-timeline-image">
+          <div class="job-timeline-img">
+            <img src="{{ item.value.img }}" alt="" />
+          </div>
+        </div>
+        <div class="job-timeline-content">
+          <li *ngIf="item.value.roles.length === 1">
+            <div class="job-timeline-title">{{ item.value.roles[0].role }}</div>
+            <div class="job-timeline-company">
+              {{ item.value.company }} &middot; {{ item.value.jobType }}
+            </div>
+            <div>
+              {{ item.value.roles[0].startDate }} -
+              {{ item.value.roles[0].endDate }} &middot;
+              {{ item.value.roles[0].period }}
+            </div>
+            <div>
+              {{ item.value.roles[0].city }}, {{ item.value.roles[0].state }}
+            </div>
+            <hr *ngIf="!last" />
           </li>
-          <hr *ngIf="!last">
-        </ul>
-      </div>
-      </li>
+          <li *ngIf="item.value.roles.length > 1">
+            <div>
+              <div class="job-timeline-title">{{ item.value.company }}</div>
+              <div class="job-timeline-company">
+                {{ item.value.jobType }} &middot; {{ item.value.totalPeriod }}
+              </div>
+              <ul class="job-timeline-roles">
+                <li *ngFor="let role of item.value.roles; let last = last">
+                  <span class="job-timeline-dot"></span>
+                  <div class="job-timeline-title">{{ role.role }}</div>
+                  <div>
+                    {{ role.startDate }} - {{ role.endDate }} &middot;
+                    {{ role.period }}
+                  </div>
+                  <div>{{ role.city }}, {{ role.state }}</div>
+                  <div *ngIf="!last" class="job-timeline-line"></div>
+                </li>
+                <hr *ngIf="!last" />
+              </ul>
+            </div>
+          </li>
+        </div>
+      </ng-container>
     </div>
-  </ng-container>
-</div>
   </ul>
 </div>

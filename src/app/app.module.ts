@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { HomeService } from './home/home.service';
 import { GroupByPipe } from './group-by.pipe';
+import { KeyValuePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GroupByPipe } from './group-by.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    KeyValuePipe
     
   ],
   providers: [HomeService],
