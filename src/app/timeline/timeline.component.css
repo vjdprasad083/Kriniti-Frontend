@@ -47,7 +47,7 @@
   border-color: #ffffff;
   opacity: 25%;
   margin-inline-start: -3.5rem;
-  margin-inline-end: -1.5rem;
+  margin-inline-end: -10px;
 }
 .job-timeline li {
   position: relative;
