@@ -1,114 +1,115 @@
-*{
-    font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+* {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
+    Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 }
-.job-timeline{
-padding:12px 12px ;
-display: flex;
-width: 61%;
-margin-left: 5%;
-margin-top: 3rem;
-background-color: #ffffff;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+.job-timeline {
+  padding: 12px 12px;
+  display: flex;
+  width: 61%;
+  margin-left: 5%;
+  margin-top: 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.job-timeline-header{
-padding-bottom: 14px;
-opacity: 85%;
-font-size: 20px;
-font-weight: 600;
+.job-timeline-header {
+  padding-bottom: 14px;
+  opacity: 85%;
+  font-size: 20px;
+  font-weight: 600;
 }
-.job-timeline-image{
-    display: inline-block;
-    width: 56px;
-    bottom: 0px;
+.job-timeline-image {
+  display: inline-block;
+  width: 56px;
+  bottom: 0px;
 }
 .job-timeline-img {
-    display: inline-block;
-    margin-right: 56px;
-    height: 48px;
-    
-  }
-  .job-timeline-img img{ 
-    width: 48px;
-    height: 48px;
-  }
-  
-  .job-timeline-content {
-    display: inline-block;
-    width: 89%;
-    vertical-align: top; 
-  }
-.job-timeline-data {
-    margin-left: -1.5rem;
-    margin-top: 12px;
-  }
-.job-timeline  hr{
-    border-color: #ffffff;
-    opacity: 25%;
-    margin-inline-start: -3.5rem;
-    margin-inline-end: -1.5rem;
+  display: inline-block;
+  margin-right: 56px;
+  height: 48px;
 }
-.job-timeline li{
-    position: relative;
-    list-style: none;
-  }
-  .job-timeline li div {
-    position: relative;
-    list-style: none;
-  }
-    .job-timeline li li{
-    margin-top: 12px;
-    padding: 12px 0px;
-    position: relative;
-    list-style: none;
-  }
-    .job-timeline-title {
-    color: black;
-    opacity: 85%;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .job-timeline-company{
-    font-size: 14px;
-    color:#000000E6;
-    
-  }
-  
-  .job-timeline li div:nth-child(3) {
-    color: #00000099;
-    font-size: 14px;
-  }
+.job-timeline-img img {
+  width: 48px;
+  height: 48px;
+}
 
-  .job-timeline li  div:nth-child(4){
-    color: #00000099;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  .job-timeline li li span:nth-child(2) {
-    color: #00000099;
-    font-size: 14px;
-  }
+.job-timeline-content {
+  display: inline-block;
+  width: 89%;
+  vertical-align: top;
+}
+.job-timeline-data {
+  margin-left: -1.5rem;
+  margin-top: 12px;
+}
+.job-timeline hr {
+  border-color: #ffffff;
+  opacity: 25%;
+  margin-inline-start: -3.5rem;
+  margin-inline-end: -1.5rem;
+}
+.job-timeline li {
+  position: relative;
+  list-style: none;
+}
+.job-timeline li div {
+  position: relative;
+  list-style: none;
+}
+.job-timeline li li {
+  margin-top: 12px;
+  padding: 12px 0px;
+  position: relative;
+  list-style: none;
+}
+.job-timeline-title {
+  color: black;
+  opacity: 85%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.job-timeline-company {
+  font-size: 14px;
+  color: #000000e6;
+}
 
-  .job-timeline-roles{
-    padding: 1px 0px 0px 0px;
-  }
-  .job-timeline-dot{
-    background-color: rgb(0, 0,0,0.3);
-    position: relative;
-    display: block;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-    top: 4px;
-    left: -5.5%;
-    margin-bottom: calc(-0.8rem);
-  }
-  .job-timeline-line::before{
-    content: "";
-    position: absolute;
-    left: -5%;
-    top: -34px;
-    height: 67px;
-    width: 2px;
-    opacity: 25%;
-    background-color: rgb(0, 0,0,0.3);
-  }
+.job-timeline li div:nth-child(3) {
+  color: #00000099;
+  font-size: 14px;
+}
+
+.job-timeline li div:nth-child(4) {
+  color: #00000099;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.job-timeline li li span:nth-child(2) {
+  color: #00000099;
+  font-size: 14px;
+}
+
+.job-timeline-roles {
+  padding: 1px 0px 0px 0px;
+}
+.job-timeline-dot {
+  background-color: rgb(0, 0, 0, 0.3);
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  top: 4px;
+  left: -5.5%;
+  margin-bottom: calc(-0.8rem);
+}
+.job-timeline-line::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: -34px;
+  height: 65px;
+  width: 2px;
+  opacity: 25%;
+  background-color: rgb(0, 0, 0, 0.3);
+}

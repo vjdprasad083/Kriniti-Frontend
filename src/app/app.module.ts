@@ -10,20 +10,9 @@ import { GroupByPipe } from './group-by.pipe';
 import { KeyValuePipe } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    TimelineComponent,
-    GroupByPipe
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    KeyValuePipe
-    
-  ],
+  declarations: [AppComponent, HomeComponent, TimelineComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, KeyValuePipe],
   providers: [HomeService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
