@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
 
+## Sample Ui
+![krinati page](https://user-images.githubusercontent.com/89148761/236391706-3d086462-0382-4267-9d31-c4220e2c1efe.jpg)
+
 ## Requirements
 1.Node.js version: 16.13.2<br />
 2.npm version: 8.19.2<br />
